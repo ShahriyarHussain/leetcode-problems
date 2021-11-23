@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-class Solution {
+class Problem_13 {
 
     /*
     Problem Name: Roman Integers
