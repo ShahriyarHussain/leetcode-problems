@@ -3,7 +3,7 @@ package easy;
 import java.util.HashMap;
 import java.util.Map;
 
-class Problem_13 {
+public class Problem_13 {
 
     /*
     Problem Name: Roman Integers
