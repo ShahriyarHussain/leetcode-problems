@@ -1,3 +1,5 @@
+package easy;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -5,6 +7,7 @@ class Problem_13 {
 
     /*
     Problem Name: Roman Integers
+    Difficulty: Easy
     link: https://leetcode.com/problems/roman-to-integer/
      */
 

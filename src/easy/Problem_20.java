@@ -1,9 +1,12 @@
+package easy;
+
 import java.util.Stack;
 
 public class Problem_20 {
 
     /*
     Problem Name: Valid Parenthesis
+    Difficulty: Easy
     link: https://leetcode.com/problems/valid-parentheses/
      */
 
