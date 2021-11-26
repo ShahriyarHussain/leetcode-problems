@@ -1,6 +1,12 @@
 package easy;
 
-public class Problem_54 {
+public class Problem_53 {
+
+    /*
+    Name: Maximum Subarray
+    Difficulty: Easy
+    Link: https://leetcode.com/problems/maximum-subarray/
+     */
 
     public int maxSubArray(int[] nums) {
        int globalMaxSum, currentMaxSum;
@@ -12,7 +18,7 @@ public class Problem_54 {
        return globalMaxSum;
     }
 
-    //    public static void main(String[] args) {
+//        public static void main(String[] args) {
 //        int[] array = {-2,1,-3,4,-1,2,1,-5,4};
 //        System.out.println(maxSubArray(array));
 //    }
