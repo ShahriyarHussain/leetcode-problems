@@ -7,22 +7,23 @@ import java.util.List;
 public class Problem_94 {
 
     /*
-    Name: Merge Sorted Array
+    Name: Binary Tree Inorder Traversal
     Difficulty: Easy
-    Link: https://leetcode.com/problems/merge-sorted-array/
+    Link: https://leetcode.com/problems/binary-tree-inorder-traversal/
      */
 
+    List<Integer> inorder = new LinkedList<>();
     public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> inorder = new LinkedList<>();
-        TreeNode now = root;
-//        while(true) {
-//            if (now.right != null) {
-//                continue;
-//            } else if (root.left != null)
-//        }
-        return inorder;
+        if (root == null) return this.inorder;
+        traverseInorder(root);
+        return this.inorder;
+    }
 
-    }    
+    public void traverseInorder(TreeNode root) {
+        if (root.left != null) traverseInorder(root.left);
+        inorder.add(root.val);
+        if (root.right != null) traverseInorder(root.right);
+    }
 }
 
 
