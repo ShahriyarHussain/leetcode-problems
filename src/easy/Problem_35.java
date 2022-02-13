@@ -3,28 +3,27 @@ package easy;
 public class Problem_35 {
 
     /*
-    Name: Search Insert Postion
+    Name: Search Insert Position
     Difficulty: Easy
     Link: https://leetcode.com/problems/search-insert-position/
      */
 
     public int searchInsert(int[] nums, int target) {
-        int low = 0, high = nums.length-1;
-        int mid = low + (high - low)/2;
 
-        while (true) {
-            if (high < low) return mid;
+        int start = 0, end = nums.length - 1,  mid = start + (end - start)/2;
+
+        while (start <= end) {
+
             if (target == nums[mid]) {
                 return mid;
+            } else if (target > nums[mid]) {
+                start = mid + 1;
+            } else {
+                end = mid - 1;
             }
-            if (target > nums[mid]) low = mid + 1;
-            else if (target < nums[mid]) high = mid - 1;
-            mid = low + (high - low)/2;
+            mid = start + (end - start)/2;
         }
-    }
 
-//    public static void main(String[] args) {
-//        int[] array = {1};
-//        System.out.println(searchInsert(array, 0));
-//    }
+        return mid;
+    }
 }
