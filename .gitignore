@@ -24,3 +24,9 @@ hs_err_pid*
 
 #intellij file
 .idea
+
+#C-sharp files
+c-sharp-solves/bin
+c-sharp-solves/obj
+c-sharp-solves/c-sharp-solves.csproj
+
