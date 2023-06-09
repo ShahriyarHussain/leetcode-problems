@@ -1,7 +1,5 @@
 package medium;
 
-import easy.ListNode;
-
 import java.util.HashSet;
 import java.util.Set;
 

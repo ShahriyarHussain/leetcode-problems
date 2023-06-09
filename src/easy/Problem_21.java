@@ -1,5 +1,7 @@
 package easy;
 
+
+
 public class Problem_21 {
 
     /*
@@ -39,4 +41,5 @@ public class Problem_21 {
 }
 
 //The ListNode Class is given in Leetcode and no need to implement it.
+
 //Only uncomment if testing the code in local machine

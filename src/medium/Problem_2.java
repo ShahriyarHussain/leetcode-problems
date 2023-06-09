@@ -1,6 +1,6 @@
 package medium;
 
-import easy.ListNode;
+
 
 public class Problem_2 {
     /*
@@ -14,7 +14,7 @@ public class Problem_2 {
         ListNode head = new ListNode(), prevNode = head;
 
         for (ListNode start = head, l1Head = l1, l2Head = l2;
-             l1Head != null || l2Head != null;) {
+             l1Head != null || l2Head != null; ) {
             int valOfNode1 = 0, valOfNode2 = 0, sum = 0;
 
             if (l1Head != null) {
@@ -27,7 +27,7 @@ public class Problem_2 {
             }
 
             sum = valOfNode1 + valOfNode2 + carry;
-            carry = sum /10;
+            carry = sum / 10;
             start.val = sum % 10;
             start.next = new ListNode();
             prevNode = start;
@@ -37,9 +37,10 @@ public class Problem_2 {
         if (carry != 0) {
             prevNode.next = new ListNode();
             prevNode.next.val = carry;
-        } else { prevNode.next = null; }
+        } else {
+            prevNode.next = null;
+        }
 
         return head;
     }
-
 }

@@ -1,6 +1,5 @@
 package medium;
 
-import easy.ListNode;
 
 public class Problem_2095 {
     public ListNode deleteMiddleNode(ListNode head) {

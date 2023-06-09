@@ -1,6 +1,6 @@
 package medium;
 
-import easy.ListNode;
+
 
 public class Problem_19 {
 
@@ -30,6 +30,16 @@ public class Problem_19 {
         nodeToRemove.next = nodeToRemove.next.next;
         return head;
     }
+
+     class ListNode {
+      int val;
+      ListNode next;
+      ListNode() {}
+      ListNode(int val) { this.val = val; }
+      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+      }
+
+
 }
 
 
