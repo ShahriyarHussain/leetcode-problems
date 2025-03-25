@@ -12,7 +12,7 @@ public class Problem_3169 {
     Link: https://leetcode.com/problems/count-days-without-meetings/
     */
 
-    public static int countDays(int days, int[][] meetings) {
+    public int countDays(int days, int[][] meetings) {
         Arrays.sort(meetings, Comparator.comparingInt(a -> a[0]));
         int freeDays = meetings[0][0] - 1;
         int day = meetings[0][1] + 1;
